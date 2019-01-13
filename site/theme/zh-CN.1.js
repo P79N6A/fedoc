@@ -5,8 +5,6 @@ module.exports = {
   data: appLocaleData,
   messages: {
     'app.header.search': '全文本搜索...',
-    'app.header.fecx': 'shudong',
-    'app.header.shudong': 'shudong',
     'app.header.menu.home': '首页',
     'app.header.menu.community': '社区',
     'app.header.menu.tool': '工具',
@@ -90,7 +88,7 @@ module.exports = {
     'app.footer.author': '蚂蚁金服体验技术部出品 @ AFX',
     'app.footer.work_with_us': '加入我们',
     'app.footer.more-product': '更多产品',
-    'app.footer.company': 'SHUDONG',
+    'app.footer.company': 'AFX',
     'app.footer.ant-design': '蚂蚁 UI 体系',
     'app.footer.yuque': '语雀',
     'app.footer.yuque.slogan': '知识创作与分享工具',

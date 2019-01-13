@@ -9,7 +9,7 @@ import * as utils from '../utils';
 import { version as antdVersion } from '../../../../package.json';
 
 const { Option } = Select;
-const index = '/docs/community/introduce'
+
 let docsearch;
 if (typeof window !== 'undefined') {
   docsearch = require('docsearch.js'); // eslint-disable-line
@@ -86,7 +86,6 @@ export default class Header extends React.Component {
   };
 
   handleLangChange = () => {
-    // window.location.href = 'https://shudong.wang'
     const {
       location: { pathname },
     } = this.props;
@@ -104,10 +103,6 @@ export default class Header extends React.Component {
         utils.getLocalizedPathname(pathname, !utils.isZhCN(pathname)),
       );
   };
-
-  shudong = () =>{
-    window.location.href = 'https://shudong.wang'
-  }
 
   render() {
     const { menuVisible } = this.state;
@@ -142,23 +137,23 @@ export default class Header extends React.Component {
       <Button
         ghost
         size="small"
-        onClick={this.shudong}
+        onClick={this.handleLangChange}
         className="header-lang-button"
         key="lang-button"
       >
-        <FormattedMessage id="app.header.fecx" />
+        <FormattedMessage id="app.header.lang" />
       </Button>,
-      // <Select
-      //   key="version"
-      //   className="version"
-      //   size="small"
-      //   dropdownMatchSelectWidth={false}
-      //   defaultValue={antdVersion}
-      //   onChange={this.handleVersionChange}
-      //   getPopupContainer={trigger => trigger.parentNode}
-      // >
-      //   {versionOptions}
-      // </Select>,
+      <Select
+        key="version"
+        className="version"
+        size="small"
+        dropdownMatchSelectWidth={false}
+        defaultValue={antdVersion}
+        onChange={this.handleVersionChange}
+        getPopupContainer={trigger => trigger.parentNode}
+      >
+        {versionOptions}
+      </Select>,
       <Menu
         className="menu-site"
         mode={menuMode}
@@ -167,13 +162,18 @@ export default class Header extends React.Component {
         key="nav"
       >
         <Menu.Item key="home" className="hide-in-home-page">
-          <Link to={utils.getLocalizedPathname('/docs/community/introduce', isZhCN)}>
+          <Link to={utils.getLocalizedPathname('/', isZhCN)}>
             <FormattedMessage id="app.header.menu.home" />
           </Link>
         </Menu.Item>
         <Menu.Item key="docs/community">
           <Link to={utils.getLocalizedPathname('/docs/community/introduce', isZhCN)}>
             <FormattedMessage id="app.header.menu.community" />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="docs/git">
+          <Link to={utils.getLocalizedPathname('/docs/git/introduce', isZhCN)}>
+            <FormattedMessage id="app.header.menu.git" />
           </Link>
         </Menu.Item>
         <Menu.Item key="docs/mac">
@@ -184,7 +184,7 @@ export default class Header extends React.Component {
       </Menu>,
     ];
 
-    const searchPlaceholder = locale === 'zh-CN' ? '在 fe.cx 中搜索' : 'Search in fe.cx';
+    const searchPlaceholder = locale === 'zh-CN' ? '在 ant.design 中搜索' : 'Search in ant.design';
     return (
       <header id="header" className={headerClassName}>
         {isMobile && (
@@ -202,8 +202,15 @@ export default class Header extends React.Component {
         )}
         <Row>
           <Col xxl={4} xl={5} lg={5} md={5} sm={24} xs={24}>
-            <Link to={utils.getLocalizedPathname(index, isZhCN)} id="logo">
-              前端世界
+            <Link to={utils.getLocalizedPathname('/', isZhCN)} id="logo">
+              <img
+                alt="logo"
+                src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+              />
+              <img
+                alt="Ant Design"
+                src="https://gw.alipayobjects.com/zos/rmsportal/DkKNubTaaVsKURhcVGkh.svg"
+              />
               <Santa />
             </Link>
           </Col>

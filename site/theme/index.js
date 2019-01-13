@@ -45,9 +45,11 @@ module.exports = {
       return null;
     },
     'docs/pattern': pickerGenerator('pattern'),
-    'docs/react': pickerGenerator('react'),
-    'docs/resource': pickerGenerator('resource'),
-    'docs/spec': pickerGenerator('spec'),
+    // 'docs/react': pickerGenerator('react'),
+    'docs/mac': pickerGenerator('mac'),
+    'docs/community': pickerGenerator('community'),
+    // 'docs/resource': pickerGenerator('resource'),
+    // 'docs/spec': pickerGenerator('spec'),
   },
   plugins: [
     'bisheng-plugin-description',
@@ -74,6 +76,14 @@ module.exports = {
       },
       {
         path: 'docs/react/:children',
+        component: contentTmpl,
+      },
+      {
+        path: 'docs/mac/:children',
+        component: contentTmpl,
+      },
+      {
+        path: 'docs/community/:children',
         component: contentTmpl,
       },
       {
