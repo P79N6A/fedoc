@@ -21,6 +21,7 @@ function getActiveMenuItem(props) {
 
 function getModuleData(props) {
   const { pathname } = props.location;
+  // console.log(pathname)
   const moduleName = /^\/?components/.test(pathname)
     ? 'components'
     : pathname
@@ -28,8 +29,10 @@ function getModuleData(props) {
         .filter(item => item)
         .slice(0, 2)
         .join('/');
+
+  // console.log(moduleName)
   const moduleData =
-    moduleName === 'components' ||
+    // moduleName === 'components' ||
     moduleName === 'docs/react' ||
     moduleName === 'changelog' ||
     moduleName === 'changelog-cn'
