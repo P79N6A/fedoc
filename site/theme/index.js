@@ -44,15 +44,10 @@ module.exports = {
       }
       return null;
     },
-<<<<<<< HEAD
-    'docs/pattern': pickerGenerator('pattern'),
+    // 'docs/pattern': pickerGenerator('pattern'),
     // 'docs/react': pickerGenerator('react'),
     'docs/mac': pickerGenerator('mac'),
     'docs/community': pickerGenerator('community'),
-=======
-    // 'docs/pattern': pickerGenerator('pattern'),
-    'docs/mac': pickerGenerator('mac'),
->>>>>>> dev-1
     // 'docs/resource': pickerGenerator('resource'),
     // 'docs/spec': pickerGenerator('spec'),
   },
@@ -79,15 +74,14 @@ module.exports = {
       //   path: 'docs/pattern/:children',
       //   component: redirectTmpl,
       // },
-      {
-<<<<<<< HEAD
-        path: 'docs/pattern/:children',
-        component: redirectTmpl,
-      },
-      {
-        path: 'docs/react/:children',
-        component: contentTmpl,
-      },
+      // {
+      //   path: 'docs/pattern/:children',
+      //   component: redirectTmpl,
+      // },
+      // {
+      //   path: 'docs/react/:children',
+      //   component: contentTmpl,
+      // },
       {
         path: 'docs/mac/:children',
         component: contentTmpl,
@@ -96,17 +90,14 @@ module.exports = {
         path: 'docs/community/:children',
         component: contentTmpl,
       },
-      {
-        path: 'changelog',
-        component: contentTmpl,
-      },
-      {
-        path: 'changelog-cn',
-=======
-        path: 'docs/mac/:children',
->>>>>>> dev-1
-        component: contentTmpl,
-      },
+      // {
+      //   path: 'changelog',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'changelog-cn',
+      //   component: contentTmpl,
+      // },
       // {
       //   path: 'changelog',
       //   component: contentTmpl,
@@ -127,14 +118,14 @@ module.exports = {
       //   path: 'docs/spec/feature-cn',
       //   component: redirectTmpl,
       // },
-      {
-        path: 'docs/spec/:children',
-        component: contentTmpl,
-      },
-      {
-        path: 'docs/resource/:children',
-        component: redirectTmpl,
-      },
+      // {
+      //   path: 'docs/spec/:children',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'docs/resource/:children',
+      //   component: redirectTmpl,
+      // },
     ],
   },
 };
