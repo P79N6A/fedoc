@@ -44,10 +44,10 @@ module.exports = {
       }
       return null;
     },
-    'docs/pattern': pickerGenerator('pattern'),
-    'docs/react': pickerGenerator('react'),
-    'docs/resource': pickerGenerator('resource'),
-    'docs/spec': pickerGenerator('spec'),
+    // 'docs/pattern': pickerGenerator('pattern'),
+    'docs/mac': pickerGenerator('mac'),
+    // 'docs/resource': pickerGenerator('resource'),
+    // 'docs/spec': pickerGenerator('spec'),
   },
   plugins: [
     'bisheng-plugin-description',
@@ -68,34 +68,34 @@ module.exports = {
         path: 'index-cn',
         component: homeTmpl,
       },
+      // {
+      //   path: 'docs/pattern/:children',
+      //   component: redirectTmpl,
+      // },
       {
-        path: 'docs/pattern/:children',
-        component: redirectTmpl,
-      },
-      {
-        path: 'docs/react/:children',
+        path: 'docs/mac/:children',
         component: contentTmpl,
       },
-      {
-        path: 'changelog',
-        component: contentTmpl,
-      },
-      {
-        path: 'changelog-cn',
-        component: contentTmpl,
-      },
-      {
-        path: 'components/:children/',
-        component: contentTmpl,
-      },
-      {
-        path: 'docs/spec/feature',
-        component: redirectTmpl,
-      },
-      {
-        path: 'docs/spec/feature-cn',
-        component: redirectTmpl,
-      },
+      // {
+      //   path: 'changelog',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'changelog-cn',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'components/:children/',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'docs/spec/feature',
+      //   component: redirectTmpl,
+      // },
+      // {
+      //   path: 'docs/spec/feature-cn',
+      //   component: redirectTmpl,
+      // },
       {
         path: 'docs/spec/:children',
         component: contentTmpl,
