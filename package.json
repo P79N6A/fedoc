@@ -1,6 +1,6 @@
 {
   "name": "antd",
-  "version": "3.12.1",
+  "version": "3.12.2",
   "title": "Ant Design",
   "description": "An enterprise-class UI design language and React-based implementation",
   "homepage": "http://ant.design/",
@@ -98,6 +98,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-intl": "^2.3.14",
     "@types/react-slick": "^0.23.2",
+    "@types/warning": "^3.0.0",
     "@yesmeck/offline-plugin": "^5.0.5",
     "ansi-styles": "^3.2.1",
     "antd-theme-generator": "^1.1.4",
