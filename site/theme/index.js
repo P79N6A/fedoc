@@ -44,10 +44,15 @@ module.exports = {
       }
       return null;
     },
+<<<<<<< HEAD
     'docs/pattern': pickerGenerator('pattern'),
     // 'docs/react': pickerGenerator('react'),
     'docs/mac': pickerGenerator('mac'),
     'docs/community': pickerGenerator('community'),
+=======
+    // 'docs/pattern': pickerGenerator('pattern'),
+    'docs/mac': pickerGenerator('mac'),
+>>>>>>> dev-1
     // 'docs/resource': pickerGenerator('resource'),
     // 'docs/spec': pickerGenerator('spec'),
   },
@@ -70,7 +75,12 @@ module.exports = {
         path: 'index-cn',
         component: homeTmpl,
       },
+      // {
+      //   path: 'docs/pattern/:children',
+      //   component: redirectTmpl,
+      // },
       {
+<<<<<<< HEAD
         path: 'docs/pattern/:children',
         component: redirectTmpl,
       },
@@ -92,20 +102,31 @@ module.exports = {
       },
       {
         path: 'changelog-cn',
+=======
+        path: 'docs/mac/:children',
+>>>>>>> dev-1
         component: contentTmpl,
       },
-      {
-        path: 'components/:children/',
-        component: contentTmpl,
-      },
-      {
-        path: 'docs/spec/feature',
-        component: redirectTmpl,
-      },
-      {
-        path: 'docs/spec/feature-cn',
-        component: redirectTmpl,
-      },
+      // {
+      //   path: 'changelog',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'changelog-cn',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'components/:children/',
+      //   component: contentTmpl,
+      // },
+      // {
+      //   path: 'docs/spec/feature',
+      //   component: redirectTmpl,
+      // },
+      // {
+      //   path: 'docs/spec/feature-cn',
+      //   component: redirectTmpl,
+      // },
       {
         path: 'docs/spec/:children',
         component: contentTmpl,
