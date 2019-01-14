@@ -1,7 +1,7 @@
 ---
 category: 社区
-order: 10
-title: 设计资源
+order: 20
+title: 技术社区
 ---
 
 这里提供 Ant Design 相关设计资源和设计工具的下载，更多设计资源正在整理和完善中。

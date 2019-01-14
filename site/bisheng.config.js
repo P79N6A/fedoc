@@ -1,6 +1,7 @@
 const path = require('path');
 const CSSSplitWebpackPlugin = require('css-split-webpack-plugin').default;
 const replaceLib = require('antd-tools/lib/replaceLib');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const usePreact = process.env.REACT_ENV === 'preact';
@@ -118,7 +119,12 @@ module.exports = {
 
     alertBabelConfig(config.module.rules);
 
-    config.plugins.push(new CSSSplitWebpackPlugin({ size: 4000 }));
+    config.plugins.push(
+      new CSSSplitWebpackPlugin({ size: 4000 }),
+      new CopyWebpackPlugin([
+        { from: './site/CNAME', to: '.' },
+      ])
+    );
 
     return config;
   },

@@ -1,7 +1,7 @@
 ---
 category: 社区
 order: 10
-title: 设计资源
+title: 博客
 ---
 
 这里提供 Ant Design 相关设计资源和设计工具的下载，更多设计资源正在整理和完善中。
