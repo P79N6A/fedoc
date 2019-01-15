@@ -121,9 +121,9 @@ module.exports = {
 
     config.plugins.push(
       new CSSSplitWebpackPlugin({ size: 4000 }),
-      new CopyWebpackPlugin([
-        { from: './site/CNAME', to: '.' },
-      ])
+      // new CopyWebpackPlugin([
+      //   { from: './site/CNAME', to: '.' },
+      // ])
     );
 
     return config;

@@ -9,6 +9,7 @@ module.exports = {
     'app.header.shudong': 'shudong',
     'app.header.menu.home': '首页',
     'app.header.menu.community': '社区',
+    'app.header.menu.shortcuts': '快捷键',
     'app.header.menu.tool': '工具',
     'app.header.menu.ide': '编辑器',
     'app.header.menu.react': 'react',

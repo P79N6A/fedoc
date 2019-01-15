@@ -48,6 +48,7 @@ module.exports = {
     // 'docs/react': pickerGenerator('react'),
     'docs/mac': pickerGenerator('mac'),
     'docs/community': pickerGenerator('community'),
+    'docs/shortcuts': pickerGenerator('shortcuts'),
     // 'docs/resource': pickerGenerator('resource'),
     // 'docs/spec': pickerGenerator('spec'),
   },
@@ -84,6 +85,10 @@ module.exports = {
       // },
       {
         path: 'docs/mac/:children',
+        component: contentTmpl,
+      },
+      {
+        path: 'docs/shortcuts/:children',
         component: contentTmpl,
       },
       {

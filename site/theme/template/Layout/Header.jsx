@@ -176,6 +176,11 @@ export default class Header extends React.Component {
             <FormattedMessage id="app.header.menu.community" />
           </Link>
         </Menu.Item>
+        <Menu.Item key="docs/shortcuts">
+          <Link to={utils.getLocalizedPathname('/docs/shortcuts/introduce', isZhCN)}>
+            <FormattedMessage id="app.header.menu.shortcuts" />
+          </Link>
+        </Menu.Item>
         <Menu.Item key="docs/mac">
           <Link to={utils.getLocalizedPathname('/docs/mac/introduce', isZhCN)}>
             <FormattedMessage id="app.header.menu.mac" />
