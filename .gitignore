@@ -25,6 +25,7 @@ nohup.out
 _site
 _data
 dist
+docs
 /lib
 /es
 elasticsearch-*
