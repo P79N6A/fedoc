@@ -49,6 +49,8 @@ module.exports = {
     'docs/mac': pickerGenerator('mac'),
     'docs/community': pickerGenerator('community'),
     'docs/shortcuts': pickerGenerator('shortcuts'),
+    'docs/xcx': pickerGenerator('xcx'),
+    'docs/wechat': pickerGenerator('wechat'),
     // 'docs/resource': pickerGenerator('resource'),
     // 'docs/spec': pickerGenerator('spec'),
   },
@@ -93,6 +95,14 @@ module.exports = {
       },
       {
         path: 'docs/community/:children',
+        component: contentTmpl,
+      },
+      {
+        path: 'docs/xcx/:children',
+        component: contentTmpl,
+      },
+      {
+        path: 'docs/wechat/:children',
         component: contentTmpl,
       },
       // {

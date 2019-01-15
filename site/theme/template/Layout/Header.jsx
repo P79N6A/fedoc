@@ -176,6 +176,16 @@ export default class Header extends React.Component {
             <FormattedMessage id="app.header.menu.community" />
           </Link>
         </Menu.Item>
+        <Menu.Item key="docs/xcx">
+          <Link to={utils.getLocalizedPathname('/docs/xcx/introduce', isZhCN)}>
+            <FormattedMessage id="app.header.menu.xcx" />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="docs/wechat">
+          <Link to={utils.getLocalizedPathname('/docs/wechat/introduce', isZhCN)}>
+            <FormattedMessage id="app.header.menu.wechat" />
+          </Link>
+        </Menu.Item>
         <Menu.Item key="docs/shortcuts">
           <Link to={utils.getLocalizedPathname('/docs/shortcuts/introduce', isZhCN)}>
             <FormattedMessage id="app.header.menu.shortcuts" />
