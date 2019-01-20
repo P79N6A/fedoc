@@ -12,7 +12,7 @@ class Footer extends React.Component {
     this.lessLoaded = false;
 
     this.state = {
-      color: '#1890ff',
+      color: '#FAAD14',
     };
   }
 
@@ -152,7 +152,7 @@ class Footer extends React.Component {
                   <FormattedMessage id="app.footer.more-product" />
                 </h2>
                 <div style={{ marginTop: 20 }}>
-                  <ColorPicker
+                  {/* <ColorPicker
                     type="sketch"
                     small
                     color={color}
@@ -172,7 +172,7 @@ class Footer extends React.Component {
                       '#EB2F96',
                     ]}
                     onChangeComplete={this.handleColorChange}
-                  />
+                  /> */}
                 </div>
               </div>
             </Col>

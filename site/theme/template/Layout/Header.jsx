@@ -218,7 +218,7 @@ export default class Header extends React.Component {
         <Row>
           <Col xxl={4} xl={5} lg={5} md={5} sm={24} xs={24}>
             <Link to={utils.getLocalizedPathname(index, isZhCN)} id="logo">
-              前端世界
+              前端内参
               <Santa />
             </Link>
           </Col>
